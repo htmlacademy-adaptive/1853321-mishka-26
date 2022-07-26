@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Alexei Ishtuganov](https://up.htmlacademy.ru/adaptive/26/user/1853321).
-* Наставник: `Неизвестно`.
+* Наставник: `Сергей Артёмов`(https://htmlacademy.ru/profile/id228892).
 
 ---
 
