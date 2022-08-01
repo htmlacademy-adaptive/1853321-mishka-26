@@ -4,6 +4,54 @@
 
 {% block main %}
 <main>
-	Контент страницы формы
+	<h2 class="title">Вязание на заказ</h2>
+	<form class="form" action="#">
+		<p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+		<h3 class="form__subtitle">Тип</h3>
+		<div class="form__group">
+			<input class="form__input" type="radio" name="interior_accessory" id="interior_accessory" checked>
+			<label class="form__label" for="interior_accessory">Аксессуар для интерьера</label>
+			<input class="form__input" type="radio" name="children_toys" id="children_toys">
+			<label class="form__label" for="children_toys">Детская игрушка</label>
+		</div>
+		<h3 class="form__subtitle">Цвет</h3>
+		<div class="form__group">
+			<input class="form__input" type="checkbox" name="white" id="white" checked>
+			<label class="form__label" for="white">Белый</label>
+			<input class="form__input" type="checkbox" name="gray" id="gray" checked>
+			<label class="form__label" for="gray">Серый</label>
+			<input class="form__input" type="checkbox" name="tiffany" id="tiffany">
+			<label class="form__label" for="tiffany">Тиффани</label>
+			<input class="form__input" type="checkbox" name="black" id="black">
+			<label class="form__label" for="black">Черный</label>
+			<input class="form__input" type="checkbox" name="pink" id="pink">
+			<label class="form__label" for="pink">Розовый</label>
+			<input class="form__input" type="checkbox" name="orange" id="orange">
+			<label class="form__label" for="orange">Оранжевый</label>
+		</div>
+		<h3 class="form__subtitle">Фио</h3>
+		<div class="form__group">
+			<label class="form__label" for="first-name">Имя:</label>
+			<input class="form__input" type="text" name="first-name" id="first-name" required placeholder="Введите ваше имя*">
+			<label class="form__label" for="second-name">Фамилия:</label>
+			<input class="form__input" type="text" name="second-name" id="second-name" required placeholder="Укажите фамилию*">
+			<label class="form__label" for="middle-name">Отчество:</label>
+			<input class="form__input" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+		</div>
+		<h3 class="form__subtitle">тел</h3>
+		<div class="form__group">
+			<input class="form__input" type="tel" required placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+		</div>
+		<h3 class="form__subtitle">E-mail</h3>
+		<div class="form__group">
+			<input class="form__input" type="email" required placeholder="Ваш Email*">
+		</div>
+		<h3 class="form__subtitle">Доп</h3>
+		<div class="form__group">
+			<textarea class="form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+		</div>
+		<p class="form__text-instruction">*Поля обязательны для заполнения</p>
+		<button class="button" type="button">Отправить заказ</button>
+	</form>
 </main>
 {% endblock %}
